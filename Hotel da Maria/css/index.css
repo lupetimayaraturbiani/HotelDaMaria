@@ -1,0 +1,162 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background: #0b4d56;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content img{
+    width: 50px;
+    height: 70px;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.header-icons {
+  font-size: 20px;
+}
+
+/* CONTAINER */
+.container {
+  padding: 15px;
+}
+
+/* SEÇÕES HORIZONTAIS */
+.vip h2 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #0b4d56;
+}
+
+.scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.pet-card-horizontal {
+  background: #0b4d56;
+  border-radius: 8px;
+  color: white;
+  min-width: 140px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pet-card-horizontal img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.pet-card-horizontal p {
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* GRID DE ADOÇÃO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pet-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.pet-card h3 {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.pet-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.pet-card button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pet-card button:hover {
+  background: #43a047;
+}
+
+/* NAV INFERIOR */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a {
+  font-size: 22px;
+  color: #0b4d56;
+  text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 16px;
+  }
+  .pet-card img {
+    height: 120px;
+  }
+}
