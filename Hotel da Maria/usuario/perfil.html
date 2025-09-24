@@ -31,7 +31,7 @@
 
       <div class="acoes">
         <button id="btnExcluir" class="excluir">Excluir cadastro</button>
-        <button class="sair">Sair</button>
+        <button onclick="logout()" class="sair">Sair</button>
       </div>
     </section>
   </main>
@@ -63,7 +63,12 @@
     </div>
   </div>
 
-  <script src="../js/perfil.js"></script>
+  <script>
+    function logout() {
+      alert("Você saiu do sistema!");
+      window.location.href = "../usuario/login.html";
+    }
+  </script>
 </body>
 
 </html>

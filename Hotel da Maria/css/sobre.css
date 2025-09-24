@@ -18,20 +18,21 @@ body {
 .topo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     width: 34.5px;
     height: 46px;
+    margin-right: 12px;
 }
 
 .topo h1 {
     font-size: 1.5rem;
-    color: #074d59;
+    color: #114B5F;
 }
 
 /* Conteúdo principal */
@@ -94,7 +95,7 @@ body {
 
 .faq-resposta {
     display: none;
-    padding: 15px;
+    padding: 30px;
     background: #f1f8f8;
     font-size: 0.95rem;
 }
@@ -105,6 +106,10 @@ body {
 
 /* Rodapé */
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -126,12 +131,12 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
-.historia {
-    flex-direction: column;
-    text-align: center;
-}
+    .historia {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.imagem-historia {
-    width: 100%;
-}
+    .imagem-historia {
+        width: 100%;
+    }
 }
