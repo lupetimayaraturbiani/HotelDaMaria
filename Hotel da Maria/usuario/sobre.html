@@ -1,25 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Sobre Nós</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/app.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Hotel da Maria</title>
+  <link rel="stylesheet" href="../css/sobre.css">
 </head>
-<body>
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a href="home.html" class="nav-link">Início</a></li>
-      <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-      <li class="nav-item"><a href="sejaDoador.html" class="nav-link">Seja um Doador</a></li>
-      <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
-      <li class="nav-item"><a href="#" onclick="logoutUsuario()" class="nav-link">Sair</a></li>
-    </ul>
-  </nav>
 
-  <div class="container">
-    <h2>Sobre Nós</h2>
-    <p>Aqui você pode contar a história da ONG ou plataforma.</p>
-  </div>
+<body>
+  <header class="topo">
+    <img src="../img/logo-dark.png" alt="Logo Hotel da Maria" class="logo">
+    <h1>Hotel da Maria</h1>
+  </header>
+
+  <main class="conteudo">
+    <section class="historia">
+      <img src="../img/foto-sobre.png" alt="Maria com cães" class="imagem-historia">
+      <div class="texto-historia">
+        <h2>Nossa história</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-item">
+        <button class="faq-pergunta">Quais documentos preciso para adotar?</button>
+        <div class="faq-resposta">
+          <p>Nós solicitamos alguns documentos para a segurança do seu novo amigo:</p>
+          <ul>
+            <li>RG ou CPF</li>
+            <li>Comprovante de endereço</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pergunta">Como faço para ser um doador?</button>
+        <div class="faq-resposta">
+          <p>Você pode se cadastrar na aba "Seja um Doador" e preencher o formulário.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pergunta">Posso ir visitar o Hotel da Maria?</button>
+        <div class="faq-resposta">
+          <p>Sim, você pode nos visitar em horário comercial de segunda a sábado.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pergunta">Onde e como posso entrar em contato?</button>
+        <div class="faq-resposta">
+          <p>Nosso contato está disponível na aba "Contato" ou pelo telefone (11) 99999-9999.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-pergunta">Qual o horário de funcionamento?</button>
+        <div class="faq-resposta">
+          <p>Estamos abertos de segunda a sábado, das 9h às 18h.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../usuario/index.html">
+      <img src="../img/home.png" alt="Início">
+    </a>
+    <a href="../usuario/doar.html">
+      <img src="../img/doar-dark.png" alt="Doações">
+    </a>
+    <a href="../usuario/sobre.html">
+      <img src="../img/sobre-nos.png" alt="Hóspedes">
+    </a>
+    <a href="../usuario/perfil.html">
+      <img src="../img/perfil.png" alt="Perfil">
+    </a>
+  </footer>
+
+  <script src="../js/sobre.js"></script>
 </body>
+
 </html>

@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Perfil</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/app.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Hotel da Maria</title>
+  <link rel="stylesheet" href="../css/perfil.css">
 </head>
-<body onload="carregarPerfil()">
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a href="home.html" class="nav-link">Início</a></li>
-      <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-      <li class="nav-item"><a href="sejaDoador.html" class="nav-link">Seja um Doador</a></li>
-      <li class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></li>
-      <li class="nav-item"><a href="#" onclick="logoutUsuario()" class="nav-link">Sair</a></li>
-    </ul>
-  </nav>
 
-  <div class="container">
-    <h2>Meu Perfil</h2>
-    <p><strong>Nome:</strong> <span id="perfil-nome"></span></p>
-    <p><strong>Email:</strong> <span id="perfil-email"></span></p>
+<body>
+  <header class="header">
+    <img src="../img/logo-dark.png" alt="Logo Hotel da Maria" class="logo">
+    <h1>Hotel da Maria</h1>
+  </header>
+
+  <main class="container">
+    <section class="perfil">
+      <div class="perfil-info">
+        <img src="../img/foto.png" alt="Foto de perfil" class="perfil-foto">
+        <p class="perfil-nome">Olá, Ana</p>
+      </div>
+
+      <div class="perfil-opcoes">
+        <button>Dados de cadastro</button>
+        <button>Minhas doações</button>
+        <button>Hóspedes favoritos</button>
+        <button>Documentos</button>
+        <button>Encontrei um hóspede</button>
+      </div>
+
+      <div class="acoes">
+        <button id="btnExcluir" class="excluir">Excluir cadastro</button>
+        <button class="sair">Sair</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../usuario/index.html">
+      <img src="../img/home.png" alt="Início">
+    </a>
+    <a href="../usuario/doar.html">
+      <img src="../img/doar.png" alt="Doações">
+    </a>
+    <a href="../usuario/sobre.html">
+      <img src="../img/sobre-nos.png" alt="Hóspedes">
+    </a>
+    <a href="../usuario/perfil.html">
+      <img src="../img/perfil-dark.png" alt="Perfil">
+    </a>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Excluir cadastro</h2>
+      <p>Tem certeza que deseja excluir sua conta? Todos os seus dados serão perdidos.</p>
+      <div class="modal-buttons">
+        <button id="cancelar">Cancelar</button>
+        <button id="confirmar" class="confirmar">Excluir</button>
+      </div>
+    </div>
   </div>
+
+  <script src="../js/perfil.js"></script>
 </body>
+
 </html>

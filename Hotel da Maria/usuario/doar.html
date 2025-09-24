@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel da Maria - Seja um doador</title>
+  <link rel="stylesheet" href="../css/doar.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="../img/logo-dark.png" alt="Logo Hotel da Maria" class="logo">
+    <h1>Hotel da Maria</h1>
+  </header>
+
+  <main class="container">
+    <section class="banner">
+      <img src="../img/foto-doar.png" alt="Cachorro e gato deitados" class="banner-img">
+      <div class="banner-text">
+        <h2>Seja um doador</h2>
+        <p>Ajude nossos hóspedes a terem a melhor estadia enquanto aguardam pelo seu novo lar!
+          Suas doações são convertidas em cuidados especiais.</p>
+      </div>
+    </section>
+
+    <section class="doacoes">
+      <h3>Valores</h3>
+      <div class="grid">
+        <div class="card">
+          <p>R$ 10,00</p><button onclick="selecionarDoacao('R$ 10,00')">Doar</button>
+        </div>
+        <div class="card">
+          <p>R$ 25,00</p><button onclick="selecionarDoacao('R$ 25,00')">Doar</button>
+        </div>
+        <div class="card">
+          <p>R$ 50,00</p><button onclick="selecionarDoacao('R$ 50,00')">Doar</button>
+        </div>
+        <div class="card">
+          <p>R$ 75,00</p><button onclick="selecionarDoacao('R$ 75,00')">Doar</button>
+        </div>
+        <div class="card">
+          <p>R$ 100,00</p><button onclick="selecionarDoacao('R$ 100,00')">Doar</button>
+        </div>
+        <div class="card">
+          <p>Outro valor</p><button onclick="selecionarOutroValor()">Doar</button>
+        </div>
+      </div>
+
+      <h3>Alimentos</h3>
+      <div class="grid">
+        <div class="card">
+          <p>Ração comum</p><button onclick="selecionarDoacao('Ração comum')">Doar</button>
+        </div>
+        <div class="card">
+          <p>Ração especial</p><button onclick="selecionarDoacao('Ração especial')">Doar</button>
+        </div>
+        <div class="card">
+          <p>Sachê para gatos</p><button onclick="selecionarDoacao('Sachê para gatos')">Doar</button>
+        </div>
+      </div>
+
+      <h3>Brinquedos</h3>
+      <div class="grid">
+        <div class="card">
+          <p>Bolinhas</p><button onclick="selecionarDoacao('Bolinhas')">Doar</button>
+        </div>
+        <div class="card">
+          <p>Cordas</p><button onclick="selecionarDoacao('Cordas')">Doar</button>
+        </div>
+        <div class="card">
+          <p>Arranhadores</p><button onclick="selecionarDoacao('Arranhadores')">Doar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="../usuario/index.html">
+      <img src="../img/home.png" alt="Início">
+    </a>
+    <a href="../usuario/doar.html">
+      <img src="../img/doar-dark.png" alt="Doações">
+    </a>
+    <a href="../usuario/sobre.html">
+      <img src="../img/sobre-nos.png" alt="Hóspedes">
+    </a>
+    <a href="../usuario/perfil.html">
+      <img src="../img/perfil.png" alt="Perfil">
+    </a>
+  </footer>
+
+  <script src="doacao.js"></script>
+</body>
+
+</html>
